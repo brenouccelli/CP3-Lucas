@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vinheria Agnello</title>
+  <link rel="stylesheet" href="css/flex-style.css">
+</head>
+<body>
+
+  <header class="topo">
+    <a class="logo" href="#inicio">Vinheria Agnello</a>
+    <nav>
+      <ul class="menu">
+        <li><a href="#inicio">Início</a></li>
+        <li><a href="#rotulos">Rótulos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="destaque" id="inicio">
+      <div class="destaque-texto">
+        <h1>Vinhos escolhidos com calma, servidos com orgulho.</h1>
+        <p>Rótulos nacionais e importados, selecionados a dedo para cada ocasião, do jantar de terça ao brinde de ano novo.</p>
+        <a class="botao" href="#rotulos">Ver rótulos</a>
+      </div>
+      <div class="destaque-taca" aria-hidden="true">🍷</div>
+    </section>
+
+    <section class="rotulos" id="rotulos">
+      <h2>Nossos rótulos</h2>
+      <div class="cards">
+
+        <article class="card" tabindex="0">
+          <div class="card-icone">🍇</div>
+          <h3>Tinto Reserva</h3>
+          <p>Encorpado, com notas de frutas negras e carvalho. Combina com carnes assadas.</p>
+          <span class="preco">R$ 89,00</span>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-icone">🥂</div>
+          <h3>Espumante Brut</h3>
+          <p>Leve e seco, com borbulhas finas. Ideal para brindes e entradas.</p>
+          <span class="preco">R$ 74,00</span>
+        </article>
+
+        <article class="card" tabindex="0">
+          <div class="card-icone">🍷</div>
+          <h3>Branco Reserva</h3>
+          <p>Fresco e aromático, com acidez equilibrada. Ótimo com peixes e saladas.</p>
+          <span class="preco">R$ 69,00</span>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <h2>Reserve sua garrafa</h2>
+      <form class="form" onsubmit="return false;">
+        <input type="email" placeholder="Seu e-mail" aria-label="Seu e-mail">
+        <button class="botao" type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <p>Vinheria Agnello. Beba com moderação.</p>
+  </footer>
+
+</body>
+</html>

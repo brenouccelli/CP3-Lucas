@@ -1,0 +1,242 @@
+:root {
+  --vinho: #5b1a2b;
+  --vinho-escuro: #3a0f1b;
+  --dourado: #c9a24b; 
+  --creme: #faf3e8;     
+  --texto: #2b1b1f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  background: var(--creme);
+  color: var(--texto);
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 16px 32px;
+  background: var(--vinho);
+  color: var(--creme);
+}
+
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.menu {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.25s, color 0.25s, transform 0.25s;
+}
+
+.menu a:hover {
+  background: var(--dourado);
+  color: var(--vinho-escuro);
+  transform: translateY(-3px);
+}
+
+.menu a:focus,
+.logo:focus {
+  outline: 3px solid var(--dourado);
+  outline-offset: 2px;
+}
+
+.destaque {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 72px 32px;
+}
+
+.destaque-texto {
+  flex: 1 1 320px;
+}
+
+.destaque-texto h1 {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  line-height: 1.15;
+  color: var(--vinho);
+  margin-bottom: 16px;
+}
+
+.destaque-texto p {
+  max-width: 52ch; 
+  margin-bottom: 24px;
+}
+
+.destaque-taca {
+  flex: 0 0 auto;
+  font-size: 9rem;
+  transform: rotate(-12deg);
+  transition: transform 0.4s;
+}
+
+.destaque-taca:hover {
+  transform: rotate(0deg) scale(1.15);
+}
+
+.botao {
+  display: inline-block;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 999px;
+  background: var(--vinho);
+  color: var(--creme);
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+}
+
+.botao:hover {
+  background: var(--dourado);
+  color: var(--vinho-escuro);
+  box-shadow: 0 6px 16px rgba(91, 26, 43, 0.35);
+  transform: scale(1.08);
+}
+
+.botao:active {
+  transform: scale(0.96);
+}
+
+.botao:focus {
+  outline: 3px solid var(--dourado);
+  outline-offset: 3px;
+}
+
+.rotulos {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 32px 72px;
+}
+
+.rotulos h2,
+.contato h2 {
+  font-size: 2rem;
+  color: var(--vinho);
+  margin-bottom: 24px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  flex: 1 1 260px;
+  display: flex;            
+  flex-direction: column;    
+  gap: 10px;
+  padding: 28px 24px;
+  background: #fff;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s, box-shadow 0.3s, border-color 0.3s;
+}
+
+.card h3 {
+  color: var(--vinho);
+  font-size: 1.3rem;
+}
+
+.card-icone {
+  font-size: 2.4rem;
+  transition: transform 0.3s;
+}
+
+.preco {
+  margin-top: auto;    
+  font-weight: bold;
+  color: var(--vinho);
+}
+
+.card:hover {
+  border-color: var(--dourado);
+  box-shadow: 0 14px 28px rgba(91, 26, 43, 0.25);
+  transform: translateY(-8px) scale(1.04);
+}
+
+.card:hover .card-icone {
+  transform: rotate(15deg) scale(1.2);
+}
+
+.card:focus {
+  outline: none;
+  border-color: var(--vinho);
+  box-shadow: 0 0 0 4px var(--dourado);
+}
+
+.contato {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 32px 72px;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.form input {
+  flex: 1 1 260px;      
+  padding: 12px 18px;
+  border: 2px solid #d8c9b4;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fff;
+  transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: var(--vinho);
+  box-shadow: 0 0 0 4px rgba(201, 162, 75, 0.5);
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  padding: 24px;
+  background: var(--vinho-escuro);
+  color: var(--creme);
+  font-size: 0.9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+  }
+}
