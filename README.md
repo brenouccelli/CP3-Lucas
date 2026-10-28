@@ -34,5 +34,5 @@ checkpoint03-flexbox/
 Breno Uccelli - 576444
 
 ## Links
-- Repositório no GitHub: https://github.com/SEU-USUARIO/CP3-Lucas
+- Repositório no GitHub: https://github.com/brenouccelli/CP3-Lucas
 - Site no GitHub Pages: https://brenouccelli.github.io/CP3-Lucas/
