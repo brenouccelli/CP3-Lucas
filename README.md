@@ -35,4 +35,4 @@ Breno Uccelli - 576444
 
 ## Links
 - Repositório no GitHub: https://github.com/SEU-USUARIO/CP3-Lucas
-- Site no GitHub Pages: https://SEU-USUARIO.github.io/CP3-Lucas
+- Site no GitHub Pages: https://brenouccelli.github.io/CP3-Lucas/
